@@ -25,10 +25,10 @@ body{
 }
 
 #navbar{
-    height: 100%;
-    width: 100%;
+    width: 90%;
     background-color: #000000;
     display: none;
+    position: fixed;
 }
 
 #navbar .container{
@@ -72,6 +72,7 @@ body{
     font-size: 20px;
     color: #f3ca20;
     font-weight: 800;
+    transition: all .5s ease;
 }
 
 #navbar .container .nav-items .nav-links a:hover{
