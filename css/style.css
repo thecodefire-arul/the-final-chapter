@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    padding: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.menu-btn{
+    right: 4%;
+    float: right;
+    cursor: pointer;
+    position: fixed;
+    cursor: pointer;
+}
+
+.menu-btn img{
+    height: 25px;
+    width: 25px;
+}
+
+#navbar{
+    height: 100%;
+    width: 100%;
+    background-color: #000000;
+    display: none;
+}
+
+#navbar .container{
+    height: 100%;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#navbar .container .close-btn{
+    position: relative;
+    top: 0;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    background-color: #f3ca20;
+    cursor: pointer;
+}
+
+#navbar .container .close-btn .fa{
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+}
+
+#navbar .container .nav-items{
+    margin: 20px 0;
+    position: relative;
+}
+
+#navbar .container .nav-items .nav-links{
+    margin-bottom: 20px;
+}
+
+#navbar .container .nav-items .nav-links .fa{
+    margin-right: 15px;
+    color: #f3ca20;
+}
+
+#navbar .container .nav-items .nav-links a{
+    font-size: 20px;
+    color: #f3ca20;
+    font-weight: 800;
+}
+
+#navbar .container .nav-items .nav-links a:hover{
+    border-bottom: 2px solid #f3ca20;
+    padding-bottom: 5px;
+}
