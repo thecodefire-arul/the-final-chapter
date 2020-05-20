@@ -10,21 +10,28 @@ $(window).on("load", function(){
 
 $(document).ready(function() {
   $("#menu").click(function() {
-    $("#navbar").show(500);
-    $("#menu").hide(500);
+    $("#navbar").fadeIn(500);
+    $("#menu").fadeOut(500);
   });
 });
 
 $(document).ready(function() {
   $(".close-btn").click(function() {
-    $("#navbar").hide(500);
-    $("#menu").show(500);
+    $("#navbar").fadeOut(500);
+    $("#menu").fadeIn(500);
   });
 });
 
 $(document).ready(function() {
   $(".nav-links").click(function() {
-    $("#navbar").hide(500);
-    $("#menu").show(500);
+    $("#navbar").fadeOut(500);
+    $("#menu").fadeIn(500);
+  });
+});
+
+$(document).ready(function() {
+  $(".logo").click(function() {
+    $("#navbar").fadeOut(500);
+    $("#menu").fadeIn(500);
   });
 });
