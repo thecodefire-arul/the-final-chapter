@@ -234,20 +234,26 @@
 }
 
 @media (max-width: 768px){
+    #home .background{
+        float: left;
+        left: 0;
+        width: 80%;
+    }
+
     #home .container img{
         height: 44%;
         top: 35%;
     }
 
     #home .heading h3{
-        font-size: 25px;
+        font-size: 22px;
     }
 
     #home .heading h2{
-        font-size: 30px;
+        font-size: 25px;
     }
 
     #home .heading h1{
-        font-size: 40px;
+        font-size: 33px;
     }
 }
