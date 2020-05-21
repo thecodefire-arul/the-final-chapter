@@ -112,6 +112,13 @@
 #navbar .container h1 a{
     color: #ffffff;
     font-size: 30px;
+    transition: all .5s ease;
+}
+
+#navbar .container h1 a:hover{
+    background: linear-gradient(to top, #ffe838,#fd57bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 #navbar .container .close-btn{
@@ -228,7 +235,19 @@
 
 @media (max-width: 768px){
     #home .container img{
-        height: 50%;
-        top: 30%;
+        height: 44%;
+        top: 35%;
+    }
+
+    #home .heading h3{
+        font-size: 25px;
+    }
+
+    #home .heading h2{
+        font-size: 30px;
+    }
+
+    #home .heading h1{
+        font-size: 40px;
     }
 }
