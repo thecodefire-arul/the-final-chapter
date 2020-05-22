@@ -74,7 +74,7 @@
     }
 }
 
-#body{
+body{
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -169,36 +169,61 @@
     width: 100%;
 }
 
-#home .heading{
+#home .text{
     position: absolute;
     padding: 20% 5%;
     z-index: 2;
 }
 
-#home .heading h3{
+#home .text h3{
     font-size: 40px;
     margin-bottom: 10px;
     color: #B379AA;
 }
 
-#home .heading h2{
+#home .text h2{
     font-size: 30px;
     margin-bottom: 10px;
     color: #E99885;
 }
 
-#home .heading h1{
+#home .text h1{
     font-size: 50px;
+    margin-bottom: 20px;
     background: linear-gradient(to top, #ffe838,#fd57bf);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+#home .text .button{
+    background: linear-gradient(to right, #1345e6 0%, #ed239f 51%, #1345e6 100%);
+    background-size: 200% auto;
+    width: 50%;
+    text-align: center;
+    padding: 0 38px;
+    line-height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+#home .text .button:hover {
+    background-position: right center;
+}
+
+#home .text .button a{
+    font-size: 18px;
+    font-weight: 900;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
 }
 
 #home .container {
     height: 100vh;
     width: 100%;
     position: absolute;
-    background: linear-gradient(-45deg, #85C1E9 , rgb(32, 129, 194), rgb(26, 109, 165) , rgb(15, 75, 116));
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
     background-size: 400% 400%;
     animation: gradient 15s ease infinite;
     z-index: 0;
@@ -233,6 +258,98 @@
     z-index: 1;
 }
 
+#services{
+    width: 100%;
+    height: 100vh;
+}
+
+#services .container{
+    padding-right: 50px;
+    height: 100%;
+    width: 90%;
+    padding: 10px;
+    grid-template-columns: 32% 32% 32%;
+    display: grid;
+    justify-content: space-between;
+}
+
+#services .container .box{
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px grey;
+    margin: 10px 30px;
+    padding: 10px;
+    height: auto;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+#services .container .box:hover .overlay{
+    visibility: visible;
+    opacity: 1;
+}
+
+#services .container .box .overlay{
+    z-index: 4;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    position: absolute;
+    border-radius: 10px;
+    background-color: rgba(93, 173, 226, 0.9);
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+}
+
+#services .container .box .overlay .button{
+    border-radius: 5px;
+    background-color: #ffffff;
+    width: 28%;
+    cursor: pointer;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 30%;
+    box-shadow: 2px 2px 2px grey;
+}
+
+#services .container .box .overlay .button a{
+    font-size: 18px;
+    font-weight: bolder;
+    color: #BD2BB8;
+}
+
+#services .container .box .icon{
+    position: relative;
+    text-align: center;
+    margin: 20px 0;
+    width: auto;
+    height: auto;
+}
+
+#services .container .box .icon .fas,
+#services .container .box .icon .fab{
+    font-size: 40px;
+}
+
+#services .container .box h1{
+    color: yellowgreen;
+    margin: 20px 0;
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+#services .container .box .para{
+    margin-top: 30px;
+    color: grey;
+}
+
 @media (max-width: 768px){
     #home .background{
         float: left;
@@ -245,15 +362,30 @@
         top: 35%;
     }
 
-    #home .heading h3{
+    #home .text h3{
         font-size: 22px;
     }
 
-    #home .heading h2{
+    #home .text h2{
         font-size: 25px;
     }
 
-    #home .heading h1{
+    #home .text h1{
         font-size: 33px;
+    }
+
+    #services .container{
+        display: block;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #services .container .box{
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    #services .container .box h1{
+        font-size: 15;
     }
 }
